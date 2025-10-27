@@ -10,7 +10,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-const url ="https://food-backend-0lzh.onrender.com"
+
+const url = import.meta.env.VITE_BACKEND_URL;
 
   return (
     <div>

@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { assets } from '../../assets/assets';
 
-const Orders = ({url = "https://food-backend-0lzh.onrender.com"}) => {
+const Orders = ({url = import.meta.env.VITE_BACKEND_URL}) => {
   const [orders, setOrders] = useState([]);
 
   const fetchAllOrders = async () => {

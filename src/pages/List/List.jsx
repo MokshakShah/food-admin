@@ -4,7 +4,7 @@ import {toast} from 'react-toastify'
 import { useState } from 'react'
 import axios from 'axios'
 
-const List = ({url = "https://food-backend-0lzh.onrender.com"}) => {
+const List = ({url = import.meta.env.VITE_BACKEND_URL}) => {
 
   // const url="http://localhost:4000"
   const [list,setlist]= useState([])
